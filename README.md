@@ -15,19 +15,19 @@ Kruskal's algorithm sorts the edges by weight and iteratively adds the edge with
 Prim's algorithm starts with an arbitrary node and adds the edge with the smallest weight that connects a visited node with an unvisited node. It uses a priority queue (heap) to maintain the edges with the smallest weight.
 
 ## 3. Components of the Algorithm
-### 3.1 generate_random_weighted_graph
+### 3.1 create_random_weighted_graph
 This function generates a random weighted graph with a specified number of nodes and edges.
 
-### 3.2 kruskal_algorithm
+### 3.2 apply_kruskal_algorithm
 This function implements Kruskal's algorithm on a given graph and returns the MST as a list of edges.
 
-### 3.3 prim_algorithm
+### 3.3 apply_prim_algorithm
 This function implements Prim's algorithm on a given graph and returns the MST as a list of edges.
 
-### 3.4 draw_graph
+### 3.4 visualize_graph
 This function uses Matplotlib and Seaborn to visualize the original graph, the MST found by Kruskal's algorithm, and the MST found by Prim's algorithm.
 
-### 3.5 input_graph
+### 3.5 get_manual_graph_input
 This function allows users to input a graph manually by specifying the number of vertices, edges, and their weights.
 
 ## 4. User Interface
@@ -38,3 +38,9 @@ The project measures the execution time for both Kruskal's and Prim's algorithms
 
 ## 6. Conclusion
 The Minimum Spanning Tree Visualizer effectively implements and visualizes Kruskal's and Prim's algorithms on weighted graphs. The project can help users understand the working of these algorithms and their applications in solving real-world problems. Additionally, the execution time measurements provide insights into the performance of the algorithms, allowing users to make informed decisions when choosing an algorithm for a specific task.
+
+## Citation
+1. Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2009). Introduction to Algorithms (3rd ed.). MIT Press.
+2. NetworkX Developers (2021). NetworkX: Minimum Spanning Tree: Prim's algorithm. Retrieved from https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.tree.mst.minimum_spanning_edges.html
+3. NetworkX Developers (2021). NetworkX: Minimum Spanning Tree: Kruskal's algorithm. Retrieved from https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.tree.mst.kruskal_mst.html
+
