@@ -1,6 +1,6 @@
 # UTA-CSE-5311-Project
 
-This project aims to compare Kruskal's and Prim's algorithms for finding minimum spanning trees (MST) in a graph. We generate random graphs using the networkx library, apply the two algorithms, and measure their execution times.
+<h1>This project aims to compare Kruskal's and Prim's algorithms for finding minimum spanning trees (MST) in a graph. We generate random graphs using the networkx library, apply the two algorithms, and measure their execution times.
 
 Import necessary libraries:
 networkx for generating and working with graphs.
