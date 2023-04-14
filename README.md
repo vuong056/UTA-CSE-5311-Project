@@ -36,7 +36,20 @@ The project does not use a GUI. It uses a command-line interface to interact wit
 ## 5. Experimental Results
 The project measures the execution time for both Kruskal's and Prim's algorithms. The execution time can be plotted against the input size (number of nodes and edges) to visualize the performance of the algorithms. In general, Kruskal's algorithm has a time complexity of O(E * log(E)), while Prim's algorithm has a time complexity of O(E * log(V)).
 
+Here are some testing result: 
+Random Test
 ![alt text](https://github.com/vuong056/UTA-CSE-5311-Project/blob/main/Figure_1.png)
+![alt text](https://github.com/vuong056/UTA-CSE-5311-Project/blob/main/Figure_2.png)
+![alt text](https://github.com/vuong056/UTA-CSE-5311-Project/blob/main/Figure_3.png)
+
+Charts of running time versus input size:
+With Vertex = [10, 20, 30, 40, 50]
+     Edge = [15, 30, 45, 60, 75]
+Trial 1
+![alt text](https://github.com/vuong056/UTA-CSE-5311-Project/blob/main/Figure_4.png)
+
+Trial 2
+![alt text](https://github.com/vuong056/UTA-CSE-5311-Project/blob/main/Figure_5.png)
 
 
 ## 6. Conclusion
