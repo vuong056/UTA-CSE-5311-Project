@@ -1,37 +1,40 @@
 # UTA-CSE-5311-Project
+Title: Minimum Spanning Tree Visualizer using Kruskal's and Prim's Algorithms
 
-This project aims to compare Kruskal's and Prim's algorithms for finding minimum spanning trees (MST) in a graph. We generate random graphs using the networkx library, apply the two algorithms, and measure their execution times.
+Introduction
+This project aims to implement and visualize the Minimum Spanning Tree (MST) algorithms - Kruskal's and Prim's algorithms - on randomly generated or user-inputted weighted graphs. The visualizations will help users better understand the algorithms and their applications. The project also measures the execution times for both algorithms.
 
-Import necessary libraries:
-networkx for generating and working with graphs.
-itemgetter for sorting edges by weight.
-defaultdict for initializing node ranks.
-heapq for creating and managing a priority queue.
-time for measuring algorithm execution times.
-random for generating random edge weights.
+Data Structures and Algorithms
+2.1 Graph Representation
+The project uses NetworkX, a Python library for working with graphs. The graph is stored as a weighted undirected graph.
 
-Define generate_random_weighted_graph(n, m) function:
-Generate a random graph with n nodes and m edges using the networkx library.
-Assign random weights between 1 and 100 to each edge.
+2.2 Kruskal's Algorithm
+Kruskal's algorithm sorts the edges by weight and iteratively adds the edge with the lowest weight to the MST, as long as it doesn't form a cycle. It uses a disjoint-set data structure to keep track of the connected components of the MST.
 
-Implement Kruskal's algorithm:
-Sort edges by weight in ascending order.
-Initialize node parents and ranks.
-Define helper functions find_set and union_sets for disjoint-set data structure.
-Iterate through the sorted edges, add them to the MST if they don't form a cycle, and union their sets.
+2.3 Prim's Algorithm
+Prim's algorithm starts with an arbitrary node and adds the edge with the smallest weight that connects a visited node with an unvisited node. It uses a priority queue (heap) to maintain the edges with the smallest weight.
 
-Implement Prim's algorithm:
-Initialize an empty MST, a set of visited nodes, and a list of candidate edges.
-Create a min-heap from the candidate edges.
-While there are candidate edges:
-Pop the edge with the smallest weight from the heap.
-If either endpoint is not visited, add the edge to the MST and update the visited set.
-Add new candidate edges connected to the visited endpoints to the heap.
+Components of the Algorithm
+3.1 generate_random_weighted_graph
+This function generates a random weighted graph with a specified number of nodes and edges.
 
-Main script:
-Generate a random weighted graph with 1000 nodes and 2000 edges.
-Apply Kruskal's algorithm and measure the execution time.
-Apply Prim's algorithm and measure the execution time.
-Print the execution times for both algorithms.
+3.2 kruskal_algorithm
+This function implements Kruskal's algorithm on a given graph and returns the MST as a list of edges.
 
-With this project, you can compare the execution times of Kruskal's and Prim's algorithms on a randomly generated graph. This helps you understand their performance characteristics and evaluate their efficiency for different graph sizes and densities.
+3.3 prim_algorithm
+This function implements Prim's algorithm on a given graph and returns the MST as a list of edges.
+
+3.4 draw_graph
+This function uses Matplotlib and Seaborn to visualize the original graph, the MST found by Kruskal's algorithm, and the MST found by Prim's algorithm.
+
+3.5 input_graph
+This function allows users to input a graph manually by specifying the number of vertices, edges, and their weights.
+
+User Interface
+The project does not use a GUI. It uses a command-line interface to interact with users, allowing them to choose between generating a random weighted graph or inputting a graph manually. Users can also input the number of vertices and edges for the graph.
+
+Experimental Results
+The project measures the execution time for both Kruskal's and Prim's algorithms. The execution time can be plotted against the input size (number of nodes and edges) to visualize the performance of the algorithms. In general, Kruskal's algorithm has a time complexity of O(E * log(E)), while Prim's algorithm has a time complexity of O(E * log(V)).
+
+Conclusion
+The Minimum Spanning Tree Visualizer effectively implements and visualizes Kruskal's and Prim's algorithms on weighted graphs. The project can help users understand the working of these algorithms and their applications in solving real-world problems. Additionally, the execution time measurements provide insights into the performance of the algorithms, allowing users to make informed decisions when choosing an algorithm for a specific task.
