@@ -36,6 +36,9 @@ The project does not use a GUI. It uses a command-line interface to interact wit
 ## 5. Experimental Results
 The project measures the execution time for both Kruskal's and Prim's algorithms. The execution time can be plotted against the input size (number of nodes and edges) to visualize the performance of the algorithms. In general, Kruskal's algorithm has a time complexity of O(E * log(E)), while Prim's algorithm has a time complexity of O(E * log(V)).
 
+![alt text](https://github.com/vuong056/UTA-CSE-5311-Project/blob/main/Figure_1.png)
+
+
 ## 6. Conclusion
 On weighted graphs, the Kruskal and Prim algorithms are successfully implemented and visualized by the Minimum Spanning Tree Visualizer. The project can assist users in comprehending how these algorithms function and how they are used to address problems in the real world. Additionally, the execution time measurements give users information about the performance of the algorithms so they can choose the best algorithm for a given task.
 
